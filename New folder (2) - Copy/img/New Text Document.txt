@@ -1,8 +1,0 @@
-{
-	"folders":
-	[
-		{
-			"path": "C:\\Users\\DELL\\Documents\\test.html"
-		}
-	]
-}
