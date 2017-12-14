@@ -1,0 +1,10 @@
+.s1{
+	max-width: 500px
+}
+.money::after{
+	content: "VND";
+}
+		
+.money::before{
+		content: "Giá tiền"
+}
