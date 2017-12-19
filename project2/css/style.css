@@ -1,0 +1,57 @@
+img {
+ 	max-width:100%
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#menu1{
+	text-align: center;
+	border: 0px solid black;
+	position: relative;	
+}
+#menu1 a {
+	padding: 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+.menu2{
+	width: 250px;
+	margin:auto;
+	border: 1px solid white;
+}
+.menu2 a{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu3{
+	position: absolute;
+	top: 30px;
+	left:300px;
+}
+.menu2:hover {
+	background-color: #404040
+}
+.a{
+	height: 100px
+}
+body{
+	max-width:1000px;
+	margin: auto;
+	background-color: gray
+}
+.photo1{
+	width:300px;
+	float: left;
+	margin: 15px;
+}
+
+#chat{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
