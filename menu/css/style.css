@@ -1,0 +1,144 @@
+* {
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box; 
+}
+
+img {
+	max-width: 100%;
+}
+#wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+
+#header {
+	background-color:#f9f9d7;
+	height: 150px;
+	position: relative;
+	border-bottom: 5px solid #c6e2ff;
+}
+#header img {
+	width: 15%;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	
+	
+}
+.logo {
+	border: 1px solid black;
+}
+
+.menu ul {
+	list-style-type: none;
+	text-align: center;
+	border: 1px solid #ddd
+	background-color:#ffede9;
+	padding-top: 100px;
+	
+}
+
+.menu ul li {
+	width: 160px;
+	height: 40px;
+	position: relative;
+	float: left;
+	margin-left: -5px;
+}
+
+.menu ul li a {
+	padding: 20px;
+	padding-top: 20px;
+	font-family: helvetica ;
+	text-decoration: none;
+	color:#fa8072;
+}
+.menu {
+	padding-left: 170px;
+	padding-top: 15px;
+}
+
+.sub-menu li {
+	background-color: #f9f9d7;
+}
+
+.menu ul li a:hover {
+	background:white;
+}
+
+.menu ul li > .sub-menu {
+	display: none;
+	position: absolute;
+	top: -70px;
+}
+.menu ul li:hover .sub-menu {
+	display: block;
+}
+body {
+	max-width: 1000px;
+	margin: auto;
+}
+.col {
+	width: 33%
+	float:left;
+
+}
+.thumb1 {
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+}
+.thumb1 img {
+	transition: all 0.5s linear;
+	vertical-align: middle;
+
+} 
+
+.photo1 {
+	border: 1px solid #ddd;
+	width: 300px;
+	margin: 15px;0
+}
+
+.thumb1:hover img {
+	transform: scale(1.2);
+	opacity: 0.8;
+}
+h2, h3 {
+	font-family: helvetica;
+	color:#fa8072;	
+}
+.thumb2 {
+	overflow: auto;
+}
+
+.photo2{
+	width: 300px;
+	float: left;
+	margin: 15px;
+}
+.photo3 {
+	width: 300px;
+	float:left;
+	margin: 15px;
+}
+
+.photo2, .photo3 {
+	border:1px solid #ddd;
+	transition:all 0.5s ease
+}
+
+.photo3 :hover {
+	transform: translate(0,-5px);
+}
+
+.photo2 :hover {
+	transform: translate(0,-5px);
+}
+.info1 {
+	width: 400px;
+}
+.contact {
+	padding-top: 10px;
+}
