@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<div class="logo">
+				<div class="wrap-logo">
+					<div class="inner-logo">
+						<img src="img/logo1.png">
+					</div>
+				</div>	
+			</div>
+			<div class="container-menu">
+				<div class="menu">
+					<ul class="nav">
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#">Điểm đến</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">Châu Á</a>
+									<ul class="sub-menu">
+										<li><a href="#">Hàn Quốc</a></li>
+										<li><a href="#">Nhật Bản</a></li>
+										<li><a href="#">Singapore</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Châu Âu</a>
+									<ul class="sub-menu">
+										<li><a href="#">Áo</a></li>
+										<li><a href="#">Đức</a></li>
+										<li><a href="#">Pháp</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Blog</a>
+							<ul class="sub-menu">
+								<li><a href="#">Thiên nhiên</a></li>
+								<li><a href="#">Bãi biển</a></li>
+								<li><a href="#">Con người</a></li>
+							</ul></li>
+						<li><a href="#">Về tôi</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="slideshow-container">
+				 <div class="mySlides fade">
+    				<img src="./img/slide1.jpg" >
+    				<div class="text"><a href="#">Austria<br>Hallstatt</a></div>
+  				</div>
+ 
+  				<div class="mySlides fade">
+    				<img src="./img/slide4.jpg">
+    				<div class="text"><a href="#">Germany<br>Neuschwanstein castle</a></div>
+  				</div>
+ 
+  				<div class="mySlides fade">
+    				<img src="./img/slide3.jpg">
+    				<div class="text"><a href="#">Japan<br>Fuji mountain</a></div>
+  				</div>
+			</div>
+				<br>
+ 
+				<div style="text-align:center">
+  				<span class="dot" onclick="currentSlide(0)"></span> 
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+				</div>
+			<div class="most-favourite">
+				<div><h2>Chủ đề được yêu thích nhất</h2></div>
+				<div class="nature" id="title">
+					<img src="img/nature.jpg">
+					<div class="text1"><a href="#">Nature</a></div>
+				</div>
+				<div class="beach" id="title">
+					<img src="img/beach.jpg">
+					<div class="text2"><a href="#">Beach</a></div>	
+				</div>
+				<div class="human" id="title">
+					<img src="img/human.jpg">
+					<div class="text3"><a href="#">Human</a></div>	
+				</div>
+			</div>
+			<div class="about-container">
+				<div class="avatar">
+					<img src="img/avatar.jpg">
+				<div class="about-content">
+					<h3>About me</h3>
+				</div>
+				<div class="about-info">
+					<p>Chào bạn! Tôi là Kim So Huyn, người<br> Hàn Quốc, công việc hiện tại là diễn viên<br> ,vẫn độc thân và hiện đang sống ở Hàn Quốc.</p>
+				</div>
+				<div class="brick"></div>
+				<div class="about-social">
+				<a href="#"><img src="img/fb-icon.png"></a>
+					<a href="#"><img src="img/insta-icon.png"></a>
+					<a href="#"><img src="img/twitter-icon.png"></a>
+				</div>	
+				
+				</div>
+			</div>
+			<div class="post-container">
+				<div class="post-line1">
+					<div class="post1">
+						<a class="post-content" href=""><img src="img/hoian.jpg"><p>7/4/2018</p><br>
+						<p>Hội An</p></a>		
+					</div>
+					<div class="post2">
+						<a class="post-content" href="#"><img src="img/dalat.jpg">
+						<p>17/6/2018</p><br>
+						<p>Đà Lạt</p></a>						
+					</div>
+				</div>
+				<div class="post-line2">
+					<div class="post3">
+						<a class="post-content" href="#"><img src="img/singapore.jpg"><p>16/2/2018</p><br><p>Singapore</p></a>
+					</div>
+					<div class="post2" id="post4">
+						<a class="post-content" href="#"><img src="img/saigon.jpg"><p>21/7/2018</p><br><p>Sài Gòn</p></a>
+					</div>					
+				</div>
+			</div>
+			<div class="footer"></div>
+		</div>
+	</div>
+
+
+<script type="text/javascript"> var slideIndex;
+  // KHai bào hàm hiển thị slide
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 5000);
+  }
+  //mặc định hiển thị slide đầu tiên 
+  showSlides(slideIndex = 0);
+ 
+ 
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }</script>	
+</body>
+</html>

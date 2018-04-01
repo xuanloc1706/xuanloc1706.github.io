@@ -1,0 +1,300 @@
+*{	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.main{
+	max-width: 1300px;
+	margin: auto;
+}
+.header{
+	position: relative;
+	display: block;
+	background-color: #ffffff;
+
+}
+.logo {
+	
+}
+.wrap-logo {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.inner-logo{
+	position: relative;
+	text-align: center;
+	padding-bottom: 15px;
+}
+.container-menu{
+	position: relative;
+	height: 57px;
+	border-top: 1px solid rgba(239,239,239,4) ;
+	border-bottom: 1px solid rgba(239, 239, 239, 4);
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1200px;
+}
+.nav{
+	background-color: #ffffff;
+}
+.nav>li{
+	float: left;
+	margin-right: 15px;
+}
+.nav>li>a{
+	text-transform: uppercase;
+	color: black;
+}
+.nav li{
+        position: relative;
+    }
+ 
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+    }
+ 
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 200px;
+        background-color: #ffffff;
+        padding: 5px 20px;
+    }
+     
+    .nav li:hover>.sub-menu{
+        display: block;
+    }
+ 
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
+    .menu ul li {
+    	list-style-type: none;
+    	width: 200px;
+    	font-family: inherit;
+    	z-index: 9;
+    	padding-left:40px;
+    }
+    .menu ul li a {
+    	text-decoration: none;
+    	color: black;
+    }
+
+.sub-menu li {
+	border-bottom: 1px solid rgba(239,239,239,4);
+	margin-left: -20px;
+}
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 240px;
+  width: 100%;
+  text-align: center;
+}
+.text a {
+	text-decoration: none;
+	color: #f2f2f2;
+}
+ 
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.mySlides img {
+	width: 1200px;
+	height: 500px;
+}
+.most-favourite{
+	max-width: 1200px;
+	margin: auto;
+	position: relative;
+}
+h2 {
+	text-align: center;
+	padding-top: 40px;
+}
+.nature img {
+	width: 300px;
+	height: 200px;
+}
+.beach img {
+	width: 300px;
+	height: 200px;
+}
+.human img {
+	width: 300px;
+	height: 200px;
+}
+.beach{
+}
+#title {
+	width: 400px;
+	float: left;
+	padding-left: 50px;
+	padding-top: 90px;
+}
+.text1 {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -220px;
+  text-align: center;
+  left: 140px;
+}
+.text1 a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+.text2{
+	font-size: 30px;
+	position: absolute;
+	bottom: -220px;
+	left: 550px;
+	text-align: center;
+}
+.text2 a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+.text3{
+	font-size: 30px;
+	position: absolute;
+	bottom: -220px;
+	right: 150px;
+	text-align: center;
+}
+
+.text3 a {
+	color: #f2f2f2;
+	text-decoration: none;
+}
+.avatar img {
+	width: 300px;
+}
+.about-container {
+	position: relative;
+	float: right;
+	margin-top: 90px;
+	margin-right: 80px;
+	background-color: #ffcccc;
+}
+.about-content{
+	font-size: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+.about-info{
+	padding-top: 30px;
+}
+.brick{
+	position: absolute;
+	height: 1px;
+	background-color: #eff0f2;
+	width: 150px;
+	right: 70px;
+	top: 480px;
+}
+.about-social img{
+	width: 40px;
+	margin-left: 10px;
+}
+.about-social  {
+	margin-top: 60px;
+	text-align: center;
+}
+.post-container{
+	float: left;
+}
+.post-line1{
+	margin-top: 90px;
+}
+.post1{
+	float: left;
+	margin-left: 200px;
+}
+.post2 img{
+	width:232px;
+	height: 170px;
+}
+.post2 {
+	float: left;
+	margin-left: 100px;
+}
+.post-content{
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+.post-line2{
+	padding-top: 90px;
+}
+.post3 {
+	margin-top: 50px;
+	float: left;
+	margin-left: 200px;
+}
+.post3 img {
+	width: 232px;
+	height: 170px;
+}
+#post4 {
+	margin-top: 50px;
+}
+.footer{
+	position: absolute;
+	border-top: 1px solid black
+	width:100%;
+	top: 1823;
+	height: 50px;
+
+}

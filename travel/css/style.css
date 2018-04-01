@@ -1,0 +1,29 @@
+*{	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.main{
+	max-width: 1300px;
+	margin: auto;
+}
+.header{
+	position: relative;
+	display: block;
+	background-color: #ffffff;
+
+}
+.logo {
+	
+}
+.wrap-logo {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.inner-logo{
+	position: relative;
+	text-align: center;
+}
+.container{
+	height: 57px;
+}
