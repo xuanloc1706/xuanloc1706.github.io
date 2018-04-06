@@ -86,14 +86,15 @@
     	z-index: 9;
     	padding-left:40px;
     }
-     li :hover {
+    li :hover {
     	background-color: rgba(239, 239, 239, 4);
-    }
+    } 
+
     .menu ul li a {
     	text-decoration: none;
     	color: black;
+    	margin-top: 8px;
     }
-
 .sub-menu li {
 	border-bottom: 1px solid rgba(239,239,239,4);
 	margin-left: -20px;
@@ -195,7 +196,7 @@ h2 {
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
-  bottom: -220px;
+  bottom: 70px;
   text-align: center;
   left: 140px;
   padding: auto;
@@ -203,22 +204,32 @@ h2 {
 .text1 a {
 	color: #f2f2f2;
 	text-decoration: none;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+.text1:hover a{
+	opacity: 0.5
 }
 .text2{
 	font-size: 30px;
 	position: absolute;
-	bottom: -220px;
+	bottom: 70px;
 	left: 550px;
 	text-align: center;
 }
 .text2 a {
 	color: #f2f2f2;
 	text-decoration: none;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+.text2:hover a {
+	opacity: 0.5;
 }
 .text3{
 	font-size: 30px;
 	position: absolute;
-	bottom: -220px;
+	bottom: 70px;
 	right: 150px;
 	text-align: center;
 }
@@ -226,6 +237,11 @@ h2 {
 .text3 a {
 	color: #f2f2f2;
 	text-decoration: none;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+.text3:hover a {
+	opacity: 0.5;
 }
 .avatar img {
 	width: 300px;
@@ -261,6 +277,7 @@ h2 {
 .about-social  {
 	margin-top: 60px;
 	text-align: center;
+	padding-bottom: 10px;
 }
 .post-container{
 	float: left;
@@ -274,10 +291,21 @@ h2 {
 }
 .post1 img {
 	width: 300px;
+	opacity: 1;
+	transition: opacity 0.5s linear;
 }
+.post1:hover img {
+	opacity: 0.5;
+}
+
 .post2 img{
 	width:300px;
 	height: 220px;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+.post2:hover img {
+	opacity: 0.5;
 }
 .post2 {
 	float: left;
@@ -289,6 +317,7 @@ h2 {
 	text-align: center;
 	color: black;
 }
+
 .post-line2{
 	padding-top: 90px;
 }
@@ -301,6 +330,11 @@ h2 {
 .post3 img {
 	width: 300px;
 	height: 220px;
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+.post3:hover img {
+	opacity: 0.5;
 }
 #post4 {
 	margin-top: 50px;
@@ -320,6 +354,9 @@ h2 {
 	font-size: 25px;
 	color: #ffcccc;
 	text-align: center;
+	float: left;
+	padding-left: 420px;
+	padding-top: 20px;
 }
 .footer-social img {
 	width: 40px;
@@ -327,4 +364,6 @@ h2 {
 }
 .footer-social {
 	text-align: center;
+	padding-top: 20px;
+	float: left;
 }
