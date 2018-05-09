@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minimalist</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrap">	
+	<div class="header">
+		<div class="logo-brand"><p>MINIMALIST</p></div>
+		<div class="menu">
+			<div class="menu-centre">
+				<ul class="nav">
+					<li><a href="#">Trang chu</a></li>
+					<li><a href="#">Quan</a>
+						<ul class="sub-menu">
+							<li><a href="#">Denim</a></li>
+							<li><a href="#">Short</a></li>
+						</ul>
+					</li>	
+					<li><a href="#">Ao</a></li>
+					<li><a href="#">Sale</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Chung toi</a></li>	
+				</ul>	
+			</div>
+			<div class="menu-right">
+				<ul class="nav-menu-right">
+					<li>
+						<a href="login.html">SIGN IN</a>
+					</li>
+					<li class="search">
+						<a href="#"><img src="img/iconsearch.png"></a>
+					</li>
+					<li class="buy">
+						<a href="#"><img src="img/iconbuy.png"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+    			<img src="./img/slide1.jpg" >
+    				<div class="text"><a href="#">Sale<br>Up to 30%</a></div>
+  			</div>
+ 
+  			<div class="mySlides fade">
+    				<img src="./img/slide4.jpg">
+    				<div class="text"><a href="#">Cac Item nen co <br>trong tu do</a></div>
+  			</div>
+ 
+  			<div class="mySlides fade">
+    				<img src="./img/slide3.jpg">
+    				<div class="text"><a href="#">New<br>Collection</a></div>
+  			</div>
+		</div>
+				<br>
+ 
+		<div style="text-align:center">
+  				<span class="dot" onclick="currentSlide(0)"></span> 
+  				<span class="dot" onclick="currentSlide(1)"></span> 
+  				<span class="dot" onclick="currentSlide(2)"></span> 
+		</div>
+		
+			<div class="title"><p>Popular this week</p></div>
+		
+		<div class="popular-item">
+			<div class="item">
+				<a href="#"><img src="img/m1-denim-black.jpg"></a>
+				<span class="product-item">
+					<a href="#"><p class="name-item">M1 DENIM BLACK</p>
+					<p>65$</p></a>
+				</span>
+
+			</div>
+			<div class="item">
+				<a href="#"><img src="img/m1-denim-blue.jpg"></a>
+				<span class="product-item">
+					<a href="#"><p class="name-item">M1 DENIM BLUE</p>
+					<p>65$</p></a>
+				</span>			
+			</div>
+			<div class="item">
+				<a href="#"><img src="img/lax-sweatshorts-black.jpg"></a>
+				<span class="product-item">
+					<a href="#"><p class="name-item">LAX SWEARSHORTS</p>
+					<p>45$</p></a>
+				</span>
+			</div>
+			<div class="item">
+				<a href="#"><img src="img/drop-ii-tee-black.jpg"></a>
+				<span class="product-item">
+					<a href="#"><p class="name-item">DROP TEE BLACK</p>
+					<p>10$</p></a>
+				</span>
+			</div>
+		</div>
+		
+
+		<div class="title"><p>FEATURED COLLECTION</p></div>
+		<div class="banner-collection">
+			<div class="basic"><img src="img/basic1.jpg">
+				<div class="text1"><a href="#">Basic</a></div>
+			</div>
+			<div class="street"><img src="img/basic2.jpg">
+				<div class="text2"><a href="#">Street<br>Style</a></div>	
+			</div>
+		</div>
+		<div class="slogan"><img src="img/slogan2.png"></div>
+		<div class="instagram"><p>#INSTAGRAM</p></div>
+		<div class="insta-photo">
+			<div class="insta-item"><img src="img/insta1.jpg"></div>
+			<div class="insta-item"><img src="img/insta4.jpg"></div>
+			<div class="insta-item"><img src="img/insta5.jpg"></div>
+		</div>	
+	</div>
+
+	<div class="footer">
+		<span class="follow">Follow :</span>
+		<i class="fab fa-facebook-square"></i>
+	</div>			
+</div>
+
+<script type="text/javascript"> var slideIndex;
+  // KHai bào hàm hiển thị slide
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 5000);
+  }
+  //mặc định hiển thị slide đầu tiên 
+  showSlides(slideIndex = 0);
+ 
+ 
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }</script>		
+</body>
+</html>

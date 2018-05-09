@@ -1,0 +1,301 @@
+ *{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ @font-face {
+    font-family: a;
+    src: url(font/RalewayThin.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(font/Montserrat-Light.ttf);
+}
+ body {
+    margin: auto;
+    max-width: 1366px;
+ }
+ .header {
+    height: 100px;
+    background-color: #232020;
+    position: relative;
+ }
+ .logo-brand {
+    font-family: a;
+    font-weight: normal;
+    font-size: 30px;
+    color: #e5dfd9;
+    width: 160px;
+    float: left;
+    margin-top: 2px;
+    margin-left: 85px;
+}
+ .nav{
+        background-color:  #232020;
+        position: absolute;
+        left: 420px;
+        top: 16px;
+    }
+
+    .nav>li{
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .nav>li>a{
+        text-transform: uppercase;
+        color:  #e5dfd9;
+    }
+
+    .nav li{
+        position: relative;
+        list-style-type: none;
+    }
+
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+        text-decoration: none;
+        color:  #e5dfd9;
+        font-family: b
+    }
+
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 200px;
+        background-color: #ffffff;
+        padding: 5px 20px;
+        z-index: 30;
+    }
+    .nav .sub-menu li a {
+        color: black;
+    }
+    
+    .nav li:hover>.sub-menu{
+        display: block;
+    }
+
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
+    .nav-menu-right{
+    float: right;
+    margin-right:110px;
+    margin-top: 45px;
+}
+.nav-menu-right li {
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+}
+.nav-menu-right li a {
+    text-decoration: none;
+    color: #e5dfd9;
+    font-family: b;
+}.nav-menu-right li img {
+    width: 69%;
+}
+.search {
+    width: 28px;
+}
+.buy {
+    width: 28px;
+}
+}
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 240px;
+  width: 100%;
+  text-align: center;
+}
+.text a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+ 
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+ 
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.mySlides img {
+    width: 1349px;
+    height: 500px;
+}
+.title {
+    text-align: center;
+    font-family: a;
+    font-size: 30px;
+    padding-top: 90px;
+}
+.popular-item {
+    margin: auto;
+    width: 1200px;
+    padding-top: 60px;
+    height: 500px;
+}
+.item {
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+.item img {
+    width: 70%;
+}
+.product-item {
+    font-family: b;
+}
+.product-item a {
+    text-decoration: none;
+    color: black;
+}
+.name-item {
+    font-size: 16px;
+}
+
+.title2 {
+    font-family: a;
+}
+.banner-collection {
+    max-width: 1200px;
+    margin: auto;
+    height: 600px;
+}
+.basic {
+    padding-left: 150px;
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+.basic img {
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+.street {
+    padding-left: 150px;
+    width: 500px;
+    height: 500px;
+    float: left;
+}
+.street img {
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+.text1 {
+    position: absolute;
+    font-family: b;
+    font-size: 50px;
+    top: 1700px;
+    left: 350px;
+
+}
+.text1 a {
+    text-decoration: none;
+    color: #000000;
+}
+.text2 {
+    position: absolute;
+    font-family: b;
+    font-size: 50px;
+    top: 1700px;
+    right: 350px;
+}
+.text2 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.slogan {
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+
+}
+.slogan img {
+    width: 1200px;
+    height: 500px;
+}
+.instagram {
+    padding-top: 50px;
+    font-family: a;
+    font-size: 30px;
+    text-align: center;
+}
+.insta-photo {
+    width: 1200px;
+    margin: auto;
+    height: 450px;
+}
+.insta-item {
+    float: left;
+    padding-left: 75px;
+}
+
+.insta-item img {
+    width: 300px;
+    height:400px;
+}
+
+.footer {
+    height: 200px;
+    background-color: #232020;
+    position: relative;        
+}
+
+.follow {
+    position: absolute;
+    color:  #e5dfd9;
+    font-family: b;
+    font-size: 20px;
+    left: 100px;
+    top: 50px;
+}
