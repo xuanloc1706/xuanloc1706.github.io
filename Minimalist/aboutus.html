@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minimalist</title>
+	<link rel="stylesheet" type="text/css" href="css/style-product.css">
+</head>
+<body>
+<div class="wrap">	
+	<div class="header fix">
+		<div class="logo-brand"><p>MINIMALIST</p></div>
+		<div class="menu">
+			<div class="menu-centre">
+				<ul class="nav">
+					<li><a href="index.html">Trang chủ</a></li>
+					<li><a href="product2.html">Quần</a>
+						<ul class="sub-menu">
+							<li><a href="product-jean.html">Denim</a></li>
+							<li><a href="product-shorts.html">Short</a></li>
+						</ul>
+					</li>	
+					<li><a href="product.html">Áo</a></li>
+					<li><a href="product-sale.html">Sale</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="aboutus.html">Chúng tôi</a></li>	
+				</ul>	
+			</div>
+			<div class="menu-right">
+				<ul class="nav-menu-right">
+					<li>
+						<a href="login.html">SIGN IN</a>
+					</li>
+					<li class="search">
+						<a href="#"><img src="img/iconsearch.png"></a>
+					</li>
+					<li class="buy">
+						<a href="#"><img src="img/iconbuy.png"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="content-product">ABOUT US</div>
+
+		<div class="aboutus-photo"><img src="img/aboutus.jpg"></div>
+		<div class="aboutus-text"><p>Minimalist là một nhãn hiệu thời trang theo phong cách đơn giản và đường phố .<br> Cửa hàng tại Hà Nội<p>
+			<p>Instagram :@Minimalist.offcial</p>
+			<p>Facebook.com/MinimalistClothVn</p></div>
+		
+	</div>
+
+	<div class="footer">
+		<div class="column1">
+			<span class="follow">Follow :</span>
+			<div class="fb-icon"><img src="img/fb-icon.png"></div>
+			<div class="insta-icon"><img src="img/insta-icon.webp"></div>
+			<div class="youtube-icon"><img src="img/youtube-icon.png"></div>
+		</div>
+		<div class="column2">
+			<ul class="footer-menu">
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="">CONTACT US</a></li>
+				<li><a href=""></a>SHIPPING</li>
+				<li><a href=""></a>RETURN & EXCHANGES</li>
+				<li><a href=""></a>TERMS & CONDITIONS</li>
+				<li><a href="">PRIVACY&POLICY</a></li>
+			</ul>
+			<div class="email-input">
+				<input type="text" class="contact-email" name="email"" placeholder="Enter your email address ...">
+				<input type="submit" class="sign-up" value="Sign up" name="Sign up">
+			</div>
+		</div>
+
+	</div>	
+</div>	
+
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            var $filter = $('.header');
+            var $filterSpacer = $('<div />', {
+                "class": "vnkings-spacer",
+                "height": $filter.outerHeight()
+            });
+            if ($filter.size())
+            {
+                $(window).scroll(function ()
+                {
+                    if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+                    {
+                        $filter.before($filterSpacer);
+                        $filter.addClass("fix");
+                    }
+                    else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
+                    {
+                        $filter.removeClass("fix");
+                        $filterSpacer.remove();
+                    }
+                });
+            }
+ 
+        });
+    </script>	
+    </body>		
+</html>

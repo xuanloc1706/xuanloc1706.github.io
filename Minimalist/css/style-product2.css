@@ -1,4 +1,4 @@
- *{
+*{
     border: 0;
     padding: 0;
     box-sizing: border-box;
@@ -87,8 +87,7 @@
         top: 40px;
         left: 0;
     }
-
-    .header.fix {
+      .header.fix {
          left: 0;
   max-width: 100%;
   overflow: visible;
@@ -120,204 +119,99 @@
 .buy {
     width: 28px;
 }
-}
-.slideshow-container {
-  max-width: 1200px;
-  position: relative;
-  margin: auto;
 
-}
-/* Ẩn các slider */
-.mySlides {
-    display: none;
-}
-/* Định dạng nội dung Caption */
-.text {
-  color: #f2f2f2;
-  font-size: 50px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 240px;
-  width: 100%;
-  text-align: center;
-}
-.text a {
-    text-decoration: none;
-    color: #f2f2f2;
-    font-family: b;
-}
- 
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
- 
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
-}
- 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
- 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-.mySlides img {
-    width: 1349px;
-    height: 500px;
-}
-.title {
-    text-align: center;
+.content-product {
     font-family: a;
-    font-size: 30px;
-    padding-top: 90px;
-}
-.popular-item {
-    margin: auto;
-    width: 1200px;
-    padding-top: 60px;
-    height: 500px;
-}
-.item {
-    float: left;
     text-align: center;
+    padding-top: 210px;
+    font-size: 30px;
+}
+.line-content {
+        border-top-color: rgb(139, 139, 139);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(139, 139, 139);
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: rgb(139, 139, 139);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(139, 139, 139);
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    display: block;
+    height: 2px;
+    border-right-width: 0px;
+    border-right-style: initial;
+    border-right-color: rgb(139, 139, 139);
+        border-left-width: 0px;
+    border-left-style: initial;
+    border-left-color: rgb(139, 139, 139);
+        margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+        width: 180px;
+        border-color: #8b8b8b;
+
+}
+.column-select {
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+.inline {
+    text-transform: uppercase;
+    font-size: 13px;
+        font-weight: bold;
+    font-family: a;
+}
+#sort-by {
+    padding-top: 10px;
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-bottom: 8px;
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid #d9dbdc;
+}
+
+.wrap-product {
+    height: 1700px;
+    width: 1200px;
+    margin: auto;
+}
+.column-product {
+    float: left;
+    padding-top: 150px;
+}
+
+.photo-product {
+    float: left;
     width: 300px;
 }
-.item img {
-    width: 70%;
+.photo-product img {
+    width: 90%;
     opacity: 1;
-    transition: opacity 0.5s linear;
+    transition: 0.5s linear;
 }
-.item:hover img {
+.photo-product:hover img {
     opacity: 0.5;
 }
-.product-item {
-    font-family: b;
-}
-.product-item a {
+
+.photo-product a {
     text-decoration: none;
+    text-align: center;
     color: black;
-}
-.name-item {
-    font-size: 16px;
-}
-
-.title2 {
-    font-family: a;
-}
-.banner-collection {
-    max-width: 1200px;
-    margin: auto;
-    height: 600px;
-}
-.basic {
-    padding-left: 150px;
-    width: 500px;
-    height: 500px;
-    float: left;
-}
-.basic img {
-    width: 400px;
-    height: 600px;
-    float: left;
-}
-.street {
-    padding-left: 150px;
-    width: 500px;
-    height: 500px;
-    float: left;
-}
-.street img {
-    width: 400px;
-    height: 600px;
-    float: left;
-}
-.text1 {
-    position: absolute;
     font-family: b;
-    font-size: 50px;
-    top: 1700px;
-    left: 350px;
 
 }
-.text1 a {
-    text-decoration: none;
-    color: #000000;
-}
-.text2 {
-    position: absolute;
-    font-family: b;
-    font-size: 50px;
-    top: 1700px;
-    right: 350px;
-}
-.text2 a {
-    text-decoration: none;
-    color: #ffffff;
-}
-.slogan {
-    max-width: 100%;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    margin: auto;
-    background-color: #1d1616; 
-    color: #ffffff;
-    padding-top: 50px;
-    margin-top: 80px;
-}
-.text-slogan1 {
-    font-family: c;
-    font-size: 50px;
-}
-.text-slogan2 {
-    font-family: c;
-    font-size: 45px;
-    line-height: 0;
-}
-.text-slogan3 {
-    font-family: a;
-    font-size: 30px;
-}
-.instagram {
-    padding-top: 50px;
-    font-family: a;
-    font-size: 30px;
-    text-align: center;
-}
-.insta-photo {
-    width: 1200px;
-    margin: auto;
-    height: 450px;
-}
-.insta-item {
-    float: left;
-    padding-left: 75px;
-}
-
-.insta-item img {
-    width: 300px;
-    height:400px;
-}
-
 .footer {
     height: 300px;
     background-color: #232020;
@@ -406,6 +300,3 @@ list-style-type: none;
     padding-bottom: 14px;
     border-radius: 2px;
 }
-
-
-

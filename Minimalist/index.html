@@ -7,22 +7,22 @@
 </head>
 <body>
 <div class="wrap">	
-	<div class="header">
+	<div class="header fix">
 		<div class="logo-brand"><p>MINIMALIST</p></div>
 		<div class="menu">
 			<div class="menu-centre">
 				<ul class="nav">
-					<li><a href="#">Trang chu</a></li>
-					<li><a href="#">Quan</a>
+					<li><a href="index.html">Trang chủ</a></li>
+					<li><a href="product2.html">Quần</a>
 						<ul class="sub-menu">
-							<li><a href="#">Denim</a></li>
-							<li><a href="#">Short</a></li>
+							<li><a href="product-jean.html">Denim</a></li>
+							<li><a href="product-shorts.html">Short</a></li>
 						</ul>
 					</li>	
-					<li><a href="#">Ao</a></li>
-					<li><a href="#">Sale</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Chung toi</a></li>	
+					<li><a href="product.html">Áo</a></li>
+					<li><a href="product-sale.html">Sale</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="aboutus.html">Chúng tôi</a></li>	
 				</ul>	
 			</div>
 			<div class="menu-right">
@@ -109,7 +109,11 @@
 				<div class="text2"><a href="#">Street<br>Style</a></div>	
 			</div>
 		</div>
-		<div class="slogan"><img src="img/slogan2.png"></div>
+		<div class="slogan">
+			<p class="text-slogan1">Fashion has to reflect who you are,</p>
+			<p class="text-slogan2">what you feel at the moment,and where are you going.</p>
+			<p class="text-slogan3">-  Pharrell Williams  -</p>
+		</div>
 		<div class="instagram"><p>#INSTAGRAM</p></div>
 		<div class="insta-photo">
 			<div class="insta-item"><img src="img/insta1.jpg"></div>
@@ -119,8 +123,27 @@
 	</div>
 
 	<div class="footer">
-		<span class="follow">Follow :</span>
-		<i class="fab fa-facebook-square"></i>
+		<div class="column1">
+			<span class="follow">Follow :</span>
+			<div class="fb-icon"><img src="img/fb-icon.png"></div>
+			<div class="insta-icon"><img src="img/insta-icon.webp"></div>
+			<div class="youtube-icon"><img src="img/youtube-icon.png"></div>
+		</div>
+		<div class="column2">
+			<ul class="footer-menu">
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="">CONTACT US</a></li>
+				<li><a href=""></a>SHIPPING</li>
+				<li><a href=""></a>RETURN & EXCHANGES</li>
+				<li><a href=""></a>TERMS & CONDITIONS</li>
+				<li><a href="">PRIVACY&POLICY</a></li>
+			</ul>
+			<div class="email-input">
+				<input type="text" class="contact-email" name="email"" placeholder="Enter your email address ...">
+				<input type="submit" class="sign-up" value="Sign up" name="Sign up">
+			</div>
+		</div>
+
 	</div>			
 </div>
 
@@ -154,6 +177,33 @@
  
   function currentSlide(n) {
     showSlides(slideIndex = n);
-  }</script>		
+  }</script>	
+
+  <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            var $filter = $('.header');
+            var $filterSpacer = $('<div />', {
+                "class": "vnkings-spacer",
+                "height": $filter.outerHeight()
+            });
+            if ($filter.size())
+            {
+                $(window).scroll(function ()
+                {
+                    if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+                    {
+                        $filter.before($filterSpacer);
+                        $filter.addClass("fix");
+                    }
+                    else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top)
+                    {
+                        $filter.removeClass("fix");
+                        $filterSpacer.remove();
+                    }
+                });
+            }
+ 
+        });
+    </script>	
 </body>
 </html>
