@@ -62,9 +62,13 @@
         display: inline-block;
         text-decoration: none;
         color:  #e5dfd9;
-        font-family: b
+        font-family: b;
+        opacity: 1;
+        transition: opacity 0.5s linear;
     }
-
+    .nav li:hover a {
+        opacity: 0.5;
+    }
     .nav .sub-menu{
         display: none;
         position: absolute;
@@ -77,6 +81,11 @@
     }
     .nav .sub-menu li a {
         color: black;
+        opacity: 1;
+        transition: opacity 0.5s linear;
+    }
+    .sub-menu li:hover a {
+        opacity: 0.5;
     }
     
     .nav li:hover>.sub-menu{
@@ -110,7 +119,13 @@
     text-decoration: none;
     color: #e5dfd9;
     font-family: b;
-}.nav-menu-right li img {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+.nav-menu-right li:hover a {
+    opacity: 0.5;
+}
+.nav-menu-right li img {
     width: 69%;
 }
 .search {

@@ -24,6 +24,10 @@
     background-color: #232020;
     position: relative;
  }
+ .container-header {
+    max-width: 1200px;
+    width: 1200px;
+ }
  .logo-brand {
     font-family: a;
     font-weight: normal;
@@ -62,7 +66,12 @@
         display: inline-block;
         text-decoration: none;
         color:  #e5dfd9;
-        font-family: b
+        font-family: b ;
+        opacity :1;
+        transition: opacity 0.5s linear;
+    }
+    .nav li:hover a {
+        opacity: 0.5;
     }
 
     .nav .sub-menu{
@@ -74,9 +83,12 @@
         background-color: #ffffff;
         padding: 5px 20px;
         z-index: 30;
+        
     }
     .nav .sub-menu li a {
         color: black;
+        opacity: 1;
+        transition: opacity 0.5s linear
     }
     
     .nav li:hover>.sub-menu{
@@ -86,6 +98,9 @@
     .nav>li>.sub-menu{
         top: 40px;
         left: 0;
+    }
+    .nav .sub-menu li:hover a {
+        opacity: 0.5;
     }
 
     .header.fix {
@@ -111,7 +126,14 @@
     text-decoration: none;
     color: #e5dfd9;
     font-family: b;
-}.nav-menu-right li img {
+    opacity: 1;
+    transition: opacity 0.5s linear;    
+}
+
+.nav-menu-right li:hover a {
+    opacity: 0.5;
+}
+.nav-menu-right li img {
     width: 69%;
 }
 .search {
@@ -120,24 +142,23 @@
 .buy {
     width: 28px;
 }
-}
 .slideshow-container {
   max-width: 1200px;
   position: relative;
-  margin: auto;
+  padding-top: 100px;
 
 }
-/* Ẩn các slider */
+/* ÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚ÂºÃƒâ€šÃ‚Â¨n cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡c slider */
 .mySlides {
     display: none;
 }
-/* Định dạng nội dung Caption */
+/* ÃƒÆ’Ã¢â‚¬Å¾Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹nh dÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚ÂºÃƒâ€šÃ‚Â¡ng nÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢i dung Caption */
 .text {
   color: #f2f2f2;
   font-size: 50px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 240px;
+  bottom: 200px;
   width: 100%;
   text-align: center;
 }
@@ -190,6 +211,41 @@
     font-size: 30px;
     padding-top: 90px;
 }
+
+.line-content {
+        border-top-color: rgb(139, 139, 139);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(139, 139, 139);
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: rgb(139, 139, 139);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(139, 139, 139);
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    display: block;
+    height: 2px;
+    border-right-width: 0px;
+    border-right-style: initial;
+    border-right-color: rgb(139, 139, 139);
+        border-left-width: 0px;
+    border-left-style: initial;
+    border-left-color: rgb(139, 139, 139);
+        margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+        width: 180px;
+        border-color: #8b8b8b;
+
+}
 .popular-item {
     margin: auto;
     width: 1200px;
@@ -224,19 +280,325 @@
     font-family: a;
 }
 .banner-collection {
+    max-width: 1200px; *{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ @font-face {
+    font-family: a;
+    src: url(font/RalewayThin.ttf);
+}
+@font-face {
+    font-family: b;
+    src: url(font/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: c;
+    src: url(font/DancingScript-Regular.ttf);
+}
+    body {
+    margin: auto;
+    max-width: 1366px;
+ }
+ .header {
+    height: 100px;
+    background-color: #232020;
+    position: relative;
+ }
+ .container-header {
+    max-width: 1200px;
+    width: 1200px;
+ }
+ .logo-brand {
+    font-family: a;
+    font-weight: normal;
+    font-size: 30px;
+    color: #e5dfd9;
+    width: 160px;
+    float: left;
+    margin-top: 2px;
+    margin-left: 85px;
+}
+ .nav{
+    background-color:  #232020;
+    position: absolute;
+    left: 420px;
+    top: 16px;
+    }
+
+    .nav>
+    li{
+        float: left;
+    margin-right: 15px;
+    }
+    
+    .nav>
+    li>a{
+        text-transform: uppercase;
+    color:  #e5dfd9;
+    }
+
+    .nav
+    li{
+        position: relative;
+    list-style-type: none;
+    }
+
+    .nav
+    li a{
+        padding: 10px;
+    line-height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color:  #e5dfd9;
+    font-family: b;
+    opacity :1;
+    transition: opacity 0.5s linear;
+    }
+    .nav
+    li:hover a {
+        opacity: 0.5;
+    }
+
+    .nav .sub-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    z-index: 30;
+        
+    }
+    .nav .sub-menu
+    li a {
+        color: black;
+    opacity: 1;
+    transition: opacity 0.5s linear;}
+    
+    .nav
+    li:hover>.sub-menu{
+        display: block;
+    }
+
+    .nav>
+    li>.sub-menu{
+        top: 40px;
+    left: 0;
+    }
+    .nav .sub-menu
+    li:hover a {
+        opacity: 0.5;
+    }
+
+    .header.fix {
+    left: 0;
+    max-width: 100%;
+    overflow: visible;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+    .nav-menu-right{
+    float: right;
+    margin-right:110px;
+    margin-top: 45px;
+}
+.nav-menu-right
+    li {
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+}
+.nav-menu-right
+    li a {
+    text-decoration: none;
+    color: #e5dfd9;
+    font-family: b;
+    opacity: 1;
+    transition: opacity 0.5s linear;    
+}
+
+.nav-menu-right
+    li:hover a {
+    opacity: 0.5;
+}
+.nav-menu-right
+    li img {
+    width: 69%;
+}
+.search {
+    width: 28px;
+}
+.buy {
+    width: 28px;
+}
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    padding-top: 100px;
+
+}
+/* ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨n cÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡c slider */
+.mySlides {
+    display: none;
+}
+/* ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹nh dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ng nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢i dung Caption */
+.text {
+    color: #f2f2f2;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 200px;
+    width: 100%;
+    text-align: center;
+}
+.text
+    a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: b;
+}
+ 
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+ 
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+ 
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;} 
+  to {
+    opacity: 1;}
+}
+ 
+@keyframes fade {
+  from {
+    opacity: .4;} 
+  to {
+    opacity: 1;}
+}
+.mySlides
+    img {
+    width: 1349px;
+    height: 500px;
+}
+.title {
+    text-align: center;
+    font-family: a;
+    font-size: 30px;
+    padding-top: 90px;
+}
+
+.line-content {
+    border-top-color: rgb(139, 139, 139);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(139, 139, 139);
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: rgb(139, 139, 139);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(139, 139, 139);
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    display: block;
+    height: 2px;
+    border-right-width: 0px;
+    border-right-style: initial;
+    border-right-color: rgb(139, 139, 139);
+    border-left-width: 0px;
+    border-left-style: initial;
+    border-left-color: rgb(139, 139, 139);
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    width: 180px;
+    border-color: #8b8b8b;
+
+}
+.popular-item {
+    margin: auto;
+    width: 1200px;
+    padding-top: 60px;
+    height: 500px;
+}
+.item {
+    float: left;
+    text-align: center;
+    width: 300px;
+}
+.item
+    img {
+    width: 70%;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+.item:hover
+    img {
+    opacity: 0.5;
+}
+.product-item {
+    font-family: b;
+}
+.product-item
+    a {
+    text-decoration: none;
+    color: black;
+}
+.name-item {
+    font-size: 16px;
+}
+
+.title2 {
+    font-family: a;
+}
+.banner-collection {
     max-width: 1200px;
     margin: auto;
     height: 600px;
 }
 .basic {
-    padding-left: 150px;
-    width: 500px;
-    height: 500px;
-    float: left;
-}
-.basic img {
+    padding-left: 0px;
     width: 400px;
-    height: 600px;
+    height: 400px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-left: 100px;
+}
+.basic
+    img {
+    width: 100%;
     float: left;
 }
 .street {
@@ -245,7 +607,8 @@
     height: 500px;
     float: left;
 }
-.street img {
+.street
+    img {
     width: 400px;
     height: 600px;
     float: left;
@@ -254,11 +617,14 @@
     position: absolute;
     font-family: b;
     font-size: 50px;
-    top: 1700px;
-    left: 350px;
-
+    top: 50%;
+    left: 30%;
+    transform:  translate;
+    transform: translate;
+    transform: translate;
 }
-.text1 a {
+.text1
+    a {
     text-decoration: none;
     color: #000000;
 }
@@ -269,9 +635,256 @@
     top: 1700px;
     right: 350px;
 }
+.text2
+    a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.slogan {
+    max-width: 100%;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin: auto;
+    background-color: #1d1616;
+    color: #ffffff;
+    padding-top: 50px;
+    margin-top: 80px;
+}
+.text-slogan1 {
+    font-family: c;
+    font-size: 50px;
+}
+.text-slogan2 {
+    font-family: c;
+    font-size: 45px;
+    line-height: 0;
+}
+.text-slogan3 {
+    font-family: a;
+    font-size: 30px;
+}
+.instagram {
+    padding-top: 50px;
+    font-family: a;
+    font-size: 30px;
+    text-align: center;
+}
+.insta-photo {
+    width: 1200px;
+    margin: auto;
+    height: 450px;
+}
+.insta-item {
+    float: left;
+    padding-left: 75px;
+}
+
+.insta-item
+    img {
+    width: 300px;
+    height:400px;
+}
+
+.footer {
+    height: 300px;
+    background-color: #232020;
+    position: relative;
+    margin-top: 80px;      
+}
+.column1 {
+    float: left;
+    width: 500px;
+    height: 150px;
+}
+
+.follow {
+    position: absolute;
+    color:  #e5dfd9;
+    font-family: b;
+    font-size: 20px;
+    left: 100px;
+    top: 50px;
+}
+.fb-icon {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.fb-icon
+    img{
+    width: 15%;
+}
+
+.insta-icon {
+    position: absolute;
+    top: 102px;
+    left: 150px;
+}
+.insta-icon
+    img{
+    width: 8%;
+}
+
+.youtube-icon{
+    position: absolute;
+    top: 105px;
+    left: 200px;
+}
+.youtube-icon
+    img {
+    width: 7%;
+}
+.column2 {
+    float: left;
+    width: 720px;
+    padding-left: 68px;
+}
+.footer-menu {
+    list-style-type: none;
+}
+.footer-menu
+    li{
+    float: left;
+    color: #e5dfd9;
+    font-family: b;
+    padding-left: 48px;
+    padding-top: 42px;
+}
+.footer-menu
+    a {
+    text-decoration: none;
+    color: #e5dfd9;
+    font-family: b;
+}
+
+.email-input {
+    position: absolute;
+    bottom: 80px;
+    right: 180px;
+}
+.contact-email {
+    width: 460px;
+    height: 40px;
+    border-radius: 2px;
+}
+.sign-up{
+    background-color: #0e0b0b;
+    color: #ffffff;
+    font-size: 15px;
+    padding-top: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 14px;
+    border-radius: 2px;
+}
+    margin: auto;
+    height: 700px;
+    margin:  auto;
+}
+.basic {
+    margin-left: 100px;
+    width: 500px;
+    height: 618px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.basic img {
+    width: 100%;
+    float: left;
+}
+.street {
+    position:relative;
+    overflow: hidden;
+    width: 500px;
+    height: 618px;
+    float: left;
+}
+.street img {
+    width: 100%;
+    float: left;
+}
+.text1 {
+    position: absolute;
+    font-family: b;
+    font-size: 50px;
+    top: 30%;
+    left: 30%;
+    transition: 0.4s;
+}
+.text1 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.text3 {
+    color: #ffffff;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    font-family:  b;
+    font-size: 23px;
+}
+.image__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s
+}
+.basic:hover .image__bg {
+    background-color: #0c0c0c63;
+}
+.basic:hover .text1 {
+    transform: translateY(-30px);
+    color:  #ffffff;
+}
+
+.basic:hover .text3 {
+    transform: translateY(-30px);
+    opacity: 1;
+    visibility: visible;
+}
+.text2 {
+    position: absolute;
+    font-family: b;
+    font-size: 50px;
+    top: 30%;
+    right: 25%;
+    transition: 0.4s;
+}
 .text2 a {
     text-decoration: none;
     color: #ffffff;
+}
+.text4 {
+ color: #ffffff;
+ position: absolute;
+ top: 45%;
+ left: 20%;
+ opacity: 0;
+ visibility: hidden;
+ transition: 0.4s;
+ font-family:  b;
+ font-size: 23px;
+}
+.street:hover .image__bg {
+    background-color: #0c0c0c63;
+}
+.street:hover .text2 {
+    transform: translateY(-30px);
+    color:  #ffffff;
+}
+
+.street:hover .text4 {
+    transform: translateY(-30px);
+    opacity: 1;
+    visibility: visible;
 }
 .slogan {
     max-width: 100%;
@@ -309,15 +922,39 @@
     height: 450px;
 }
 .insta-item {
+    width: 300px;
+    height: 400px;
     float: left;
-    padding-left: 75px;
+    position:  relative;
+    margin-left: 80px;
+    overflow: hidden;
 }
 
 .insta-item img {
-    width: 300px;
-    height:400px;
+    width: 100%;
+    height:  100%;
+}
+.image__photo {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.insta-item:hover .image__bg {
+    background-color: #e6f3e861;
+}
+.insta-item:hover .image__photo {
+    transform: translateY(-30px);
+    opacity: 1;
+    visibility: visible;
 }
 
+.image__photo img {
+    width: 50px;
+    height: 50px;
+}
 .footer {
     height: 300px;
     background-color: #232020;
@@ -409,3 +1046,4 @@ list-style-type: none;
 
 
 
+s
