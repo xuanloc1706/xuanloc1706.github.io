@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Minimalist</title>
 	<link rel="stylesheet" type="text/css" href="css/style-product2.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
-<div class="wrap">	
 	<div class="header fix">
+		<div class="container-header">
 		<div class="logo-brand"><p>MINIMALIST</p></div>
 		<div class="menu">
 			<div class="menu-centre">
@@ -38,11 +39,14 @@
 				</ul>
 			</div>
 		</div>
+		</div>
 	</div>
 	<div class="section">
 		<div class="content-product">Quần</div>
 		<div class="line-content"></div>
-		<div class="column-select">
+		
+		<div class="wrap-product">
+			<div class="column-select">
 			<label for="sort-by" class="inline">sort by :</label>
 			<select id="sort-by">
 				<option>Best seller</option>
@@ -50,7 +54,6 @@
 				<option>c</option>
 			</select>
 		</div>
-		<div class="wrap-product">
 			<div class="column-product">
 				<div class="photo-product">
 					<a href="m1-denim-black.html"><img src="img/m1-denim-black.jpg"/>
@@ -100,7 +103,7 @@
 					</a>	
 				</div>
 				<div class="photo-product">
-					<a href="#"><img src="img/lax-sweatshorts-black.jpg"/>
+					<a href="lax-sweatshorts-black.html"><img src="img/lax-sweatshorts-black.jpg"/>
 					<span class="info-product">
 						<p>LAX SWEATSHORTS</p>
 						<p>BLACK</p>
@@ -109,7 +112,7 @@
 					</a>	
 				</div>
 				<div class="photo-product">
-					<a href="#"><img src="img/everyday-shorts-black.jpg"/>
+					<a href="everyday-shorts-black.html"><img src="img/everyday-shorts-black.jpg"/>
 					<span class="info-product">
 						<p>EVERYDAY SHORTS</p>
 						<p>BLACK</p>
@@ -125,11 +128,11 @@
 	</div>
 
 	<div class="footer">
+		<div class="footer__wrap">
 		<div class="column1">
-			<span class="follow">Follow :</span>
-			<div class="fb-icon"><img src="img/fb-icon.png"></div>
-			<div class="insta-icon"><img src="img/insta-icon.webp"></div>
-			<div class="youtube-icon"><img src="img/youtube-icon.png"></div>
+			<div class="fb-icon"><i class="fab fa-facebook-square"></i></div>
+			<div class="insta-icon"><i class="fab fa-instagram"></i></div>
+			<div class="youtube-icon"><i class="fab fa-youtube"></i></div>
 		</div>
 		<div class="column2">
 			<ul class="footer-menu">
@@ -145,9 +148,9 @@
 				<input type="submit" class="sign-up" value="Sign up" name="Sign up">
 			</div>
 		</div>
-
 	</div>
-</div>
+	</div>
+
  <script type="text/javascript">
         jQuery(document).ready(function($) {
             var $filter = $('.header');

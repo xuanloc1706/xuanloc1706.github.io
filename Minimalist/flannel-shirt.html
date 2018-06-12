@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Minimalist</title>
+	<link rel="stylesheet" type="text/css" href="css/style-product.css">
+</head>
+<body>
+<div class="wrap">	
+	<div class="header">
+		<div class="logo-brand"><p>MINIMALIST</p></div>
+		<div class="menu">
+			<div class="menu-centre">
+				<ul class="nav">
+					<li><a href="index.html">Trang chủ</a></li>
+					<li><a href="product2.html">Quần</a>
+						<ul class="sub-menu">
+							<li><a href="product-jean.html">Denim</a></li>
+							<li><a href="product-shorts.html">Short</a></li>
+						</ul>
+					</li>	
+					<li><a href="product.html">Áo</a></li>
+					<li><a href="product-sale.html">Sale</a></li>
+					<li><a href="aboutus.html">Chúng tôi</a></li>	
+				</ul>	
+			</div>
+			<div class="menu-right">
+				<ul class="nav-menu-right">
+					<li>
+						<a href="login.html">SIGN IN</a>
+					</li>
+					<li class="search">
+						<a href="#"><img src="img/iconsearch.png"></a>
+					</li>
+					<li class="buy">
+						<a href="#"><img src="img/iconbuy.png"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="about-product">
+			<div class="detail-product column">
+				<div class="slideshow-container">
+			<div class="mySlides fade">
+    			<img src="./img/flannel-work-shirt-3.jpg" >
+    				<div class="text"><a href="#"></a></div>
+  			</div>
+ 
+  			<div class="mySlides fade">
+    				<img src="./img/flannel-work-shirt-4.jpg">
+    				<div class="text"><a href="#"></a></div>
+  			</div>
+ 
+  			<div class="mySlides fade">
+    				<img src="./img/flannel-work-shirt-5.jpg">
+    				<div class="text"><a href="#"></a></div>
+  			</div>
+				</div>
+				<br>
+ 
+			<div class="wrap-dot" style="text-align:left;">
+  				<span class="dot" onclick="currentSlide(0)">
+  					<img src="img/flannel-work-shirt-3.jpg"/>
+  				</span> 
+  				<span class="dot" onclick="currentSlide(1)">
+  					<img src="img/flannel-work-shirt-4.jpg"/>
+  				</span> 
+  				<span class="dot" onclick="currentSlide(2)">
+  					<img src="img/flannel-work-shirt-5.jpg"/>
+  				</span> 
+			</div>
+				
+			</div>
+
+			<div class="right-column column">
+				<h1 class="name-product">FLANNEL WORK SHIRT</h1>
+				<p class="price-product">65$</p>
+				<p class="size">Size</p>
+				<select class="size-product">
+					<option>S</option>
+					<option>M</option>										<option>L</option>
+					<option>XL</option>
+				</select>
+				<button type="button" class="add-to-cart">
+					<span class="text11">ADD TO CART</span>
+				</button>
+				<p class="text12">This 100% cotton tank is perfect as a base layer or worn alone. the split-back basic tank features a scallop front hem with extended rear panel, and rear center seam construction</p>
+			</div>
+		</div>
+
+		<div class="another-product">
+			<span class="content-another">related&recently viewd</span>
+			<div class="wrap-another">
+				<div class="photo-another">
+					<a href=""><img src="img/m1-denim-black-another.jpg"/></a>
+					<div class="info-another">
+						<span class="name-another">m1 denim black</span><br>
+						<span class="price-another">600.000đ</span>
+					</div>
+				</div>
+
+				<div class="photo-another"><a href=""><img src="img/m1-denim-blue-another.jpg"/></a>
+					<div class="info-another">
+						<span class="name-another">m1 denim blue</span><br>
+						<span class="price-another">600.000đ</span>
+					</div>
+				</div>
+
+				<div class="photo-another"><a href=""><img src="img/m1-denim-white-another.jpg"/></a>
+					<div class="info-another">
+						<span class="name-another">m1 denim white</span><br>
+						<span class="price-another">600.000đ</span>
+					</div>
+				</div>
+
+				<div class="photo-another"><a href=""><img src="img/track-pants-black-another.jpg"/></a>
+					<div class="info-another">
+						<span class="name-another">track pants black</span><br>
+						<span class="price-another">600.000đ</span>
+					</div>
+				</div>
+
+			
+			</div>
+		</div>
+
+			
+		</div>
+		<div class="footer">
+		<div class="column1">
+			<span class="follow">Follow :</span>
+			<div class="fb-icon"><img src="img/fb-icon.png"></div>
+			<div class="insta-icon"><img src="img/insta-icon.webp"></div>
+			<div class="youtube-icon"><img src="img/youtube-icon.png"></div>
+		</div>
+		<div class="column2">
+			<ul class="footer-menu">
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="">CONTACT US</a></li>
+				<li><a href=""></a>SHIPPING</li>
+				<li><a href=""></a>RETURN & EXCHANGES</li>
+				<li><a href=""></a>TERMS & CONDITIONS</li>
+				<li><a href="">PRIVACY&POLICY</a></li>
+			</ul>
+			<div class="email-input">
+				<input type="text" class="contact-email" name="email"" placeholder="Enter your email address ...">
+				<input type="submit" class="sign-up" value="Sign up" name="Sign up">
+			</div>
+		</div>
+
+	</div>
+	</div>
+</div>	
+
+<script type="text/javascript"> var slideIndex;
+  // KHai bào hàm hiển thị slide
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 5000);
+  }
+  //mặc định hiển thị slide đầu tiên 
+  showSlides(slideIndex = 0);
+ 
+ 
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }</script>		
+  </body>
+  </html>
